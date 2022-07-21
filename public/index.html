@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Realtime comment stystem</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- <h1>Hello Welcome To Realtime Comment System</h1> -->
+
+    <div class="container">
+      <div class="row mt-4">
+        <div class="col-md-12">
+          <h4>
+            <strong
+              >Realtime comment system using NodeJs, Express, MongoDB, Socket.io
+              and vanila javaScript</strong
+            >
+          </h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error,
+            porro quos. Consectetur numquam corporis, obcaecati iure blanditiis
+            eos aliquid animi maiores vel fuga mollitia, pariatur nostrum. Animi
+            obcaecati id harum blanditiis adipisci maxime dolorem, illo
+            corporis, minus hic rem omnis ipsa velit dolor architecto eos.
+            Possimus voluptate quas exercitationem, quidem in harum atque natus
+            iste consequuntur nemo hic ea reprehenderit assumenda obcaecati
+            vitae, dolores, sit excepturi totam facilis! Sed, dicta, dolores
+            mollitia, quos obcaecati ut alias cum eius cupiditate tempore nisi
+            temporibus quaerat quibusdam neque velit ea nemo corrupti veniam
+            corporis autem quidem totam harum? Itaque amet est atque, magnam
+            sunt soluta ad voluptatum vero officia alias illo dignissimos
+            repellat perferendis qui fuga doloribus voluptatibus facilis
+            inventore non quas dicta quisquam nemo corporis aliquam! Voluptatum,
+            tempora esse. Reprehenderit rem aliquid aliquam assumenda corrupti
+            in voluptatem animi esse facere possimus, eligendi itaque nisi
+            veniam deleniti commodi provident vero omnis impedit ut quae neque
+            ab veritatis! Vel nam cupiditate qui suscipit harum incidunt, dicta
+            voluptatum aspernatur? Explicabo recusandae minus aut vel eos
+            sapiente porro, odio itaque officia quisquam enim laborum in
+            voluptates dicta beatae natus quas facere esse incidunt nostrum
+            sequi.
+          </p>
+        </div>
+      </div>
+      <!-- Comments -->
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="border-bottom pb-2">Comments</h4>
+        </div>
+        <!-- Comment area -->
+        <div class="col-md-12">
+          <div class="form-group mb-2">
+            <label for="">Write a comment</label>
+            <textarea id="textarea" rows="3" class="form-control"></textarea>
+          </div>
+        </div>
+        <!-- Comment Button -->
+        <div class="col-md-12">
+          <button id="submitBtn" class="btn btn-primary float-end mb-3">
+            Post Comment
+          </button>
+        </div>
+      </div>
+
+      <!-- Posted Comments -->
+      <div class="row">
+        <div class="col-md-12">
+          <div class="typing text-success"></div>
+          <ul class="comment_box">
+            <!-- <li class="comment">
+              <div class="card border-light mb-3">
+                <div class="card-body">
+                  <h6>Jone Deo</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias sequi a sapiente debitis reiciendis dolor at officia
+                    ipsam molestiae doloremque.
+                  </p>
+                  <div>
+                    <img src="img/clock.png" alt="clock" />
+                    <small>11:30 PM</small>
+                  </div>
+                </div>
+              </div>
+            </li> -->
+            <!-- <li class="comment">
+              <div class="card border-light mb-3">
+                <div class="card-body">
+                  <h6>Jone Deo</h6>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Alias sequi a sapiente debitis reiciendis dolor at officia
+                    ipsam molestiae doloremque.
+                  </p>
+                  <div>
+                    <img src="img/clock.png" alt="clock" />
+                    <small>11:30 PM</small>
+                  </div>
+                </div>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.4/moment.min.js"></script>
+    <script src="/js/app.js"></script>
+  </body>
+</html>
